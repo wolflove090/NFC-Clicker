@@ -1,54 +1,87 @@
-const readButton = document.getElementById("readButton");
-const readLog = document.getElementById("readLog");
-
-readButton.addEventListener("click", async () => {
-  try{
-    // Web NFC 対応ブラウザでなければエラーを表示
-    if(!("NDEFReader" in window)){
-      readLog.textContent = "このブラウザはWeb NFCに対応していません。";
-      return;
-    }
-    
-    // NFCリーダーインスタンスを作成
-    const ndef = new NDEFReader();
-    
-    // スキャンを開始
-    await ndef.scan();
-    readLog.textContent = "NFCカードをスキャン中です...カードを近づけてください。";
-    
-    // メッセージが読み取られた時の処理
-    ndef.addEventListener("reading", (event) => {
-      const { serialNumber, message } = event;
-      readLog.textContent = `カードが読み取られました\nシリアル番号: ${serialNumber}`;
-      
-      // メッセージ内のレコードを処理
-      for(const record of message.records){
-        switch(record.recordType){
-          case "text":
-            // テキストデータの読み取り
-            record.data = record.data || "";
-            const textDecoder = new TextDecoder(record.encoding || "utf-8");
-            const textContent = textDecoder.decode(record.data);
-            readLog.textContent += `\nテキスト:${textContent}`;
-            break;
-          case "url":
-            // URLデータの読み取り
-            const urlContent = new TextDecoder("utf-8").decode(record.data);
-            readLog.textContent += `\nURL:${urlContent}`;
-            break;
-          default:
-            readLog.textContent += `\n未対応のデータタイプ:${record.recordType}`;
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFC ID確認</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
         }
-      }
-    });
-    
-    // エラー処理
-    ndef.addEventListener("readingerror", () => {
-      readLog.textContent = "NFCデータの読み取りに失敗しました。もう一度試してください。";
-    });
-    
-  } catch (error) {
-    console.error("エラーが発生しました:", error);
-    readLog.textContent = `エラー: ${error.message}`;
-  }
-});
+
+        .check-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .id-display {
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #00ffcc;
+            display: none;
+        }
+
+        .loading {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="check-container">
+        <h1>NFC ID確認</h1>
+        <p>NFCタグをスキャンして、IDを確認します。</p>
+        <div class="loading">スキャン中...</div>
+        <p class="id-display">ID: <span id="tag-id"></span></p>
+    </div>
+
+    <script>
+        const idDisplay = document.querySelector('.id-display');
+        const idSpan = document.getElementById('tag-id');
+        const loadingMessage = document.querySelector('.loading');
+
+        if ('NDEFReader' in window) {
+            const reader = new NDEFReader();
+
+            reader.scan().then(() => {
+                console.log("scaned");
+                loadingMessage.style.display = 'block';
+                reader.onreading = (event) => {
+                    console.log("loaded");
+                    loadingMessage.style.display = 'none';
+                    const id = event.serialNumber;
+                    idDisplay.style.display = 'block';
+                    idSpan.textContent = id;
+                };
+            }).catch(error => {
+                console.error('NFC読み取りに失敗しました: ', error);
+                alert('NFCの読み取りに失敗しました。もう一度お試しください。');
+            });
+        } else {
+            alert('NFCがサポートされていないブラウザです。');
+        }
+    </script>
+</body>
+</html>
