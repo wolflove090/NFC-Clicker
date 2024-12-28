@@ -45,12 +45,31 @@
             display: none;
             margin-top: 20px;
         }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ffffff;
+            background: #00bcd4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background: #008c9e;
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.8);
+        }
     </style>
 </head>
 <body>
     <div class="login-container">
         <h1>NFCログイン</h1>
-        <p>NFCタグをスキャンしてください。</p>
+        <p>NFCタグをスキャンするには、以下のボタンをクリックして許可を与えてください。</p>
+        <button id="start-scan">スキャンを開始</button>
         <div class="loading">スキャン中...</div>
         <p class="error-message">IDが登録されていません。</p>
     </div>
@@ -59,28 +78,31 @@
         const registeredIDs = ["04:b0:d4:a2:a3:1b:90", "87654321"];
         const errorMessage = document.querySelector('.error-message');
         const loadingMessage = document.querySelector('.loading');
+        const startScanButton = document.getElementById('start-scan');
 
-        if ('NDEFReader' in window) {
-            const reader = new NDEFReader();
+        startScanButton.addEventListener('click', () => {
+            if ('NDEFReader' in window) {
+                const reader = new NDEFReader();
 
-            reader.scan().then(() => {
-                loadingMessage.style.display = 'block';
-                reader.onreading = (event) => {
-                    loadingMessage.style.display = 'none';
-                    const id = event.serialNumber;
+                reader.scan().then(() => {
+                    loadingMessage.style.display = 'block';
+                    reader.onreading = (event) => {
+                        loadingMessage.style.display = 'none';
+                        const id = event.serialNumber;
 
-                    if (registeredIDs.includes(id)) {
-                        window.location.href = 'welcome.html';
-                    } else {
-                        errorMessage.style.display = 'block';
-                    }
-                };
-            }).catch(error => {
-                console.error('NFC読み取りに失敗しました: ', error);
-            });
-        } else {
-            alert('NFCがサポートされていないブラウザです。');
-        }
+                        if (registeredIDs.includes(id)) {
+                            window.location.href = '/welcome.html';
+                        } else {
+                            errorMessage.style.display = 'block';
+                        }
+                    };
+                }).catch(error => {
+                    console.error('NFC読み取りに失敗しました: ', error);
+                });
+            } else {
+                alert('NFCがサポートされていないブラウザです。');
+            }
+        });
     </script>
 </body>
 </html>
