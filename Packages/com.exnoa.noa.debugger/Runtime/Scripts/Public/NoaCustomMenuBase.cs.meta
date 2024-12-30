@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 5e88298eeb864751954b1f8e86d26071
+timeCreated: 1697530757
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Scripts/Public/NoaCustomMenuBase.cs
+  uploadId: 712676

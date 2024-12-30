@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bd3d5c27322154ec99d238cf66b6a978
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Scripts/Public/Information/SystemInformation/ApplicationInfo.cs
+  uploadId: 712676

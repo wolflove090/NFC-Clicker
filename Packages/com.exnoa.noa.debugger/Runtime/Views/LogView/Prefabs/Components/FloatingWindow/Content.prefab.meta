@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 24bd82bd73be74f15b13d8cd32e02c2e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/LogView/Prefabs/Components/FloatingWindow/Content.prefab
+  uploadId: 712676

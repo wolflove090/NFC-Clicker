@@ -666,7 +666,11 @@ PlayerSettings:
   webGLWebAssemblyBigInt: 0
   webGLCloseOnQuit: 0
   webWasm2023: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: NOA_DEBUGGER
+    Standalone: NOA_DEBUGGER
+    WebGL: NOA_DEBUGGER
+    iPhone: NOA_DEBUGGER
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

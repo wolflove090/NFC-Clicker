@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 25e93b729f4bd40aa920b5a112f0a202
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Scripts/Serializer/KeyValueParser.cs
+  uploadId: 712676

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: adc0a3de555d64fbfb487df739fca531
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/BasicComponents/Prefabs/InputFields/ScrollableInput.prefab
+  uploadId: 712676

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e130c67feeeed4856943e450e1ce7cf6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/Hierarchy/Prefabs/Components/GameObjectDetail.prefab
+  uploadId: 712676

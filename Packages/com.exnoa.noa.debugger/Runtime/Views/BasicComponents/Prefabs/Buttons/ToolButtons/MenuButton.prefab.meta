@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 46408d0b3c04e4ff4a40cd9b97903bc7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/BasicComponents/Prefabs/Buttons/ToolButtons/MenuButton.prefab
+  uploadId: 712676

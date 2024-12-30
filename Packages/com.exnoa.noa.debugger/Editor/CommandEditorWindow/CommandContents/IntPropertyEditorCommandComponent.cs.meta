@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2fae315c493e54326ae6ce04d4a4a243
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Editor/CommandEditorWindow/CommandContents/IntPropertyEditorCommandComponent.cs
+  uploadId: 712676

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 850155210b2954a379e1bb7b9ca9832d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Scripts/DebugCommand/CommandBuilders/BytePropertyCommandBuilder.cs
+  uploadId: 712676

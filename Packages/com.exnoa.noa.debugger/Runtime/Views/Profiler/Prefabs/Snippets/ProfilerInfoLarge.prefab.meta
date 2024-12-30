@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 100d3c81c1f2343c7b0f6cfdf2804144
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/Profiler/Prefabs/Snippets/ProfilerInfoLarge.prefab
+  uploadId: 712676

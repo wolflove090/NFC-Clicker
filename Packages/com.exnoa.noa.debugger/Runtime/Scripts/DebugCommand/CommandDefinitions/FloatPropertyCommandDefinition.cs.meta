@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 65f9ad0f920af4c48b0feca993e7de6b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Scripts/DebugCommand/CommandDefinitions/FloatPropertyCommandDefinition.cs
+  uploadId: 712676

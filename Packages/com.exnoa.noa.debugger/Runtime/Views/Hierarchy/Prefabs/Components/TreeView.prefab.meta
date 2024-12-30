@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7b8e42a5387c0440bb5abce1a4b14ded
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/Hierarchy/Prefabs/Components/TreeView.prefab
+  uploadId: 712676

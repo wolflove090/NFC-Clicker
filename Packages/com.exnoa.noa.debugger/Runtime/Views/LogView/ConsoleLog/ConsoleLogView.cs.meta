@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5ead5e1a9d5c548ffbbf2a6877b34e17
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/LogView/ConsoleLog/ConsoleLogView.cs
+  uploadId: 712676

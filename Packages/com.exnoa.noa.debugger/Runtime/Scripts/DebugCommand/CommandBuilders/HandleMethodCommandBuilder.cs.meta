@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7e998e38285454a10b421b97d350fb87
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Scripts/DebugCommand/CommandBuilders/HandleMethodCommandBuilder.cs
+  uploadId: 712676

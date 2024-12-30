@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1b002e46b577a4f6f9d408c71258df33
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/Hierarchy/Prefabs/HierarchyFloatingWindowView.prefab
+  uploadId: 712676

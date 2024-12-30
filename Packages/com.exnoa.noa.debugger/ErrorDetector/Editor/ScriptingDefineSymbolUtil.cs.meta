@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: e6b74d035c57b4f9dba52be68c26006b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/ErrorDetector/Editor/ScriptingDefineSymbolUtil.cs
+  uploadId: 712676

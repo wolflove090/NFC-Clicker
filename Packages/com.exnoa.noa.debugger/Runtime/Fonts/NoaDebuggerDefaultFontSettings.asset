@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbeb6ea8d9424b8a9c04df84fe7ad456, type: 3}
+  m_Name: NoaDebuggerDefaultFontSettings
+  m_EditorClassIdentifier: 
+  _toolStartButtonAlpha: 0
+  _backgroundAlpha: 0
+  _floatingWindowAlpha: 0
+  _noaDebuggerCanvasSortOrder: 0
+  _menuList:
+  - Name: 
+    Enabled: 0
+    SortNo: 0
+  - Name: 
+    Enabled: 0
+    SortNo: 0
+  - Name: 
+    Enabled: 0
+    SortNo: 0
+  _autoInitialize: 0
+  _customMenuList: []
+  _consoleLogCount: 0
+  _apiLogCount: 0
+  _fontAsset: {fileID: 11400000, guid: cc83244df8e7e46ed9f51010634b1f92, type: 2}
+  _fontMaterial: {fileID: -2421948843382357617, guid: cc83244df8e7e46ed9f51010634b1f92, type: 2}
+  _fontSizeRate: 0
+  _hierarchyLevels: 0

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c03aeb87aa4504150ab02cfad09b852d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/NoaDebugger/Button/alert.anim
+  uploadId: 712676

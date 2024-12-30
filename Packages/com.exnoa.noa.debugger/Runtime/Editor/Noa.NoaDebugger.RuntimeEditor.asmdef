@@ -1,0 +1,20 @@
+{
+    "name": "Noa.NoaDebugger.RuntimeEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:28d6563d65cb14323a3647f3564c0b7b",
+        "GUID:9bc999762fd91463e9a451359c511caf"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

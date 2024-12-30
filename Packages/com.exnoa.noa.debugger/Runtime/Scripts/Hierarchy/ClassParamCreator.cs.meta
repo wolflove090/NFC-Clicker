@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 09cc1aebd51e437d8a5491adef6ba2bc
+timeCreated: 1703431897
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Scripts/Hierarchy/ClassParamCreator.cs
+  uploadId: 712676

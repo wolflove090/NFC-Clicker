@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 5d87d1f2592504c508a9f1b88b574541
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/DebugCommand/ICommandPanel/CommandPanelUShortProperty.cs
+  uploadId: 712676

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 532f97b7d86f64f17aaf71a24afb15fd
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Presenters/Prefabs/Presenters.prefab
+  uploadId: 712676

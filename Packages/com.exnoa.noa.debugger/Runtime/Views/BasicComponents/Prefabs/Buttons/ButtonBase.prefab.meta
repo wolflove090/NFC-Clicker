@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7f7f402feacb449ff8ffdc70460a5ac5
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/BasicComponents/Prefabs/Buttons/ButtonBase.prefab
+  uploadId: 712676

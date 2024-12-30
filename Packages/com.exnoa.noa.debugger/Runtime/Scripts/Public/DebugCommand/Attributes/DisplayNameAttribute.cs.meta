@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a3d6e4b3ee0aa44bebd9392cc1e2cfbc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Scripts/Public/DebugCommand/Attributes/DisplayNameAttribute.cs
+  uploadId: 712676

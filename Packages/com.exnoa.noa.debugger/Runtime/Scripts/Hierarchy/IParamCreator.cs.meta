@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 9858af80f186481d87cc26eeb012b2b3
+timeCreated: 1703417735
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Scripts/Hierarchy/IParamCreator.cs
+  uploadId: 712676

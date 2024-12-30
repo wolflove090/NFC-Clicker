@@ -1,0 +1,21 @@
+{
+    "name": "Noa.NoaDebugger.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Noa.NoaDebugger.Runtime",
+        "Noa.NoaDebugger.ErrorDetector",
+        "Unity.TextMeshPro",
+        "Unity.TextMeshPro.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

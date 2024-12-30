@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9322b5c9af03643f3b089e6c21ff8c1e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/BasicComponents/Prefabs/Buttons/DisableButton/DisableButton.prefab
+  uploadId: 712676
