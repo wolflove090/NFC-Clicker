@@ -1,22 +1,30 @@
 using UnityEngine;
-using UnityEngine.UI;
+// using UnityEngine.UI;
 using TMPro;
+using UnityEngine.UIElements;
 
 public class Main : MonoBehaviour
 {
     // ===== タイトル ===== //
 
-    [SerializeField]
-    GameObject _title;
-    [SerializeField]
-    Button _initButton;
-    [SerializeField]
-    Button _loadButton;
+    // [SerializeField]
+    // GameObject _title;
+    // [SerializeField]
+    // Button _initButton;
+    // [SerializeField]
+    // Button _loadButton;
+
+    // UIDocument コンポーネント
+    [SerializeField] private UIDocument uiDocument;
+
+    private Button startButton;
+    private Button loadButton;
+
 
     // ===== メイン ===== //
 
-    [SerializeField]
-    Button _saveButton;
+    // [SerializeField]
+    // UnityEngine.UI.Button _saveButton;
 
     [SerializeField]
     TextMeshProUGUI _countLabel;
@@ -25,12 +33,23 @@ public class Main : MonoBehaviour
     
     void Start()
     {
-        this._title.SetActive(true);
+        this.uiDocument.gameObject.SetActive(true);
 
-        this._initButton.onClick.AddListener(this.InitGame);
-        this._loadButton.onClick.AddListener(this.LoadGame);
+        // this._initButton.onClick.AddListener(this.InitGame);
+        // this._loadButton.onClick.AddListener(this.LoadGame);
 
-        this._saveButton.onClick.AddListener(this.SaveNfc);
+        // UIDocument から UXML のルート要素を取得
+        var root = uiDocument.rootVisualElement;
+
+        // name="StartButton", name="LoadButton" で検索
+        startButton = root.Q<Button>("StartButton");
+        loadButton  = root.Q<Button>("LoadButton");
+
+        // ボタンを押したときの処理を登録
+        startButton.clicked += InitGame;
+        loadButton.clicked  += LoadGame;
+
+        // this._saveButton.onClick.AddListener(this.SaveNfc);
     }
 
     void Update()
@@ -49,8 +68,9 @@ public class Main : MonoBehaviour
     /// </summary>
     void InitGame()
     {
+        Debug.Log("InitGame");
         this._clickCount = 0;
-        this._title.SetActive(false);
+        this.uiDocument.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -58,10 +78,12 @@ public class Main : MonoBehaviour
     /// </summary>
     void LoadGame()
     {
+        Debug.Log("LoadGame");
+
         NfcReader.LoadData((data) => {
             this._clickCount = int.Parse(data);
             this.Refresh();
-            this._title.SetActive(false);
+            this.uiDocument.gameObject.SetActive(false);
         });
     }
 
