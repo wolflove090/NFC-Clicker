@@ -4,11 +4,11 @@
 .root {
     width: 100%;
     height: 100%;
-    /* 必要に応じて背景色やトランジションなどを付加できます */
-    /* background-color: rgba(0, 0, 0, 0.1); */
+    background: linear-gradient(120deg, #001d2d 0%, #003b56 100%);
 
-    /* position: relative; を設定して子要素を絶対配置しやすくする */
+    display: flex;
     position: relative;
+    flex-direction: column;
 }
 
 /* 右上に固定するためのコンテナ */
@@ -21,9 +21,10 @@
 /* カウンターラベル */
 .counter-label {
     font-size: 20px;
-    color: #ffffff;
-    /* お好みでフォントや装飾を追加 */
-    /* text-shadow: 1px 1px 2px #000; */
+    color: #b3ecff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-shadow: 0 0 5px rgba(179, 236, 255, 0.8);
 }
 
 /* 右下に固定するためのコンテナ */
@@ -35,20 +36,31 @@
 
 /* セーブボタン */
 .save-button {
-    /* 見やすいように少し背景色を付与する例 */
-    background-color: #333;
-    color: #fff;
-    border-radius: 4px;
-    padding: 8px 16px;
-    font-size: 16px;
-    /* ボタンが目立つように適度な装飾を */
-    border: none;
+    width: 220px;
+    padding: 12px 20px;
+    background: linear-gradient(120deg, #003b56, #005f80); /* 深海をイメージしたグラデーション */
+    border: 1px solid #007a99; /* アクセントの深いブルー */
+    border-radius: 12px; /* スタイリッシュな丸みを追加 */
+    color: #007a99; /* コントラストの高い白を使用 */
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* 深海の陰影を表現 */
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
     cursor: pointer;
-
-    /* 変化のアニメーション */
-    transition: background-color 0.2s;
 }
 
 .save-button:hover {
-    background-color: #444;
+    background: linear-gradient(120deg, #005f80, #007a99); /* より明るいブルーのグラデーションで視認性を強化 */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* ホバー時の影を強化 */
+}
+
+.save-button:active {
+    transform: scale(0.97);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* アクティブ時の影を軽く調整 */
+}
+
+.save-button:focus {
+    outline: none;
 }
