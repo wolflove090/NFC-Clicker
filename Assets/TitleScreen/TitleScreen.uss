@@ -1,11 +1,12 @@
 /* TitleScreen.uss */
 
-/* 画面全体（ルート要素） */
+/* ルート要素 */
 .root {
     width: 100%;
     height: 100%;
-    /* 背景のグラデーション例（黒～ダークグレー） */
-    background: linear-gradient(135deg, #1a1a1f, #000000);
+    /* ダークブルー -> もう少し明るいブルー のグラデーション */
+    background: linear-gradient(120deg, #001d2d 0%, #003b56 100%);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,39 +15,54 @@
 
 /* タイトルラベル */
 .title-label {
-    color: #00ffff;              /* サイバー感を出すためにシアン系 */
-    font-size: 36px;
-    font-family: "Orbitron", sans-serif; /* ちょっとサイバー風フォント例 */
-    margin-bottom: 40px;
-    text-transform: uppercase;   /* 大文字化 */
-    letter-spacing: 4px;         /* 文字間隔を少し広げる */
-    font-weight: bold;
+    color: #b3ecff;  /* 明るめの水色で深海感をプラス */
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif; /* モダンなフォント例 */
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+
+    /* 若干のテキストシャドウで浮いてる感を出す */
+    text-shadow: 0 0 5px rgba(179, 236, 255, 0.5);
 }
 
 /* ボタン共通スタイル */
-.cyber-button {
+.deepsea-button {
     width: 220px;
-    padding: 10px 20px;
+    padding: 12px 20px;
     margin-bottom: 20px;
 
-    background-color: #111;       /* ベースのボタン色 */
-    border: 1px solid #00ffff;    /* 枠線にサイバー色を使用 */
-    border-radius: 4px;
-    color: #00ffff;               /* ボタンの文字色 */
-    font-size: 18px;
-    font-family: "Orbitron", sans-serif;
+    /* 半透明っぽさを出したい場合は、背景に rgba を使う */
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid #b3ecff;  /* タイトルと同系統の色を使って統一感を */
+    border-radius: 6px;
 
-    transition: all 0.2s ease-in-out;
+    color: #b3ecff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+
+    /* ボタンに柔らかい影を加え、近代的・洗練された感じを演出 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    /* 変化のアニメーションを用意 */
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
 }
 
-/* ホバー時（マウスオーバー時） */
-.cyber-button:hover {
-    background-color: #00ffff;  /* 背景にサイバー色 */
-    color: #111;                /* 文字色を反転 */
+/* ホバー（マウスオーバー）時 */
+.deepsea-button:hover {
+    /* 背景をやや明るくして、水の反射っぽいイメージ */
+    background-color: rgba(179, 236, 255, 0.15);
+    transform: translateY(-2px);
     cursor: pointer;
 }
 
-/* ボタン押下時（クリック時） */
-.cyber-button:active {
-    transform: scale(0.95);     /* 押した感を演出 */
+/* 押下（クリック時） */
+.deepsea-button:active {
+    scale: 0.95;
+}
+
+/* さらに細かいアレンジ：フォーカス時のアウトラインを消す */
+.deepsea-button:focus {
+    outline: none;
 }
