@@ -1,55 +1,26 @@
 using UnityEngine;
-// using UnityEngine.UI;
-using TMPro;
+// using TMPro;
 using UnityEngine.UIElements;
+using System;
 
 public class Main : MonoBehaviour
 {
-    // ===== タイトル ===== //
+    [SerializeField]
+    TitleScreenController _titleScreen;
 
-    // [SerializeField]
-    // GameObject _title;
-    // [SerializeField]
-    // Button _initButton;
-    // [SerializeField]
-    // Button _loadButton;
-
-    // UIDocument コンポーネント
-    [SerializeField] private UIDocument uiDocument;
-
-    private Button startButton;
-    private Button loadButton;
-
-
-    // ===== メイン ===== //
-
-    // [SerializeField]
-    // UnityEngine.UI.Button _saveButton;
 
     [SerializeField]
-    TextMeshProUGUI _countLabel;
+    InGameScreenController _inGameScreen;
 
     int _clickCount;
     
     void Start()
     {
-        this.uiDocument.gameObject.SetActive(true);
+        this._titleScreen.Init(this.InitGame, this.LoadGame);
+        this._titleScreen.Active();
 
-        // this._initButton.onClick.AddListener(this.InitGame);
-        // this._loadButton.onClick.AddListener(this.LoadGame);
-
-        // UIDocument から UXML のルート要素を取得
-        var root = uiDocument.rootVisualElement;
-
-        // name="StartButton", name="LoadButton" で検索
-        startButton = root.Q<Button>("StartButton");
-        loadButton  = root.Q<Button>("LoadButton");
-
-        // ボタンを押したときの処理を登録
-        startButton.clicked += InitGame;
-        loadButton.clicked  += LoadGame;
-
-        // this._saveButton.onClick.AddListener(this.SaveNfc);
+        this._inGameScreen.Init(this.SaveNfc, this._clickCount);
+        this._inGameScreen.Inactive();
     }
 
     void Update()
@@ -70,7 +41,8 @@ public class Main : MonoBehaviour
     {
         Debug.Log("InitGame");
         this._clickCount = 0;
-        this.uiDocument.gameObject.SetActive(false);
+        this._titleScreen.Inactive();
+        this._inGameScreen.Active();
     }
 
     /// <summary>
@@ -82,14 +54,15 @@ public class Main : MonoBehaviour
 
         NfcReader.LoadData((data) => {
             this._clickCount = int.Parse(data);
+            this._titleScreen.Inactive();
+            this._inGameScreen.Active();
             this.Refresh();
-            this.uiDocument.gameObject.SetActive(false);
         });
     }
 
     void Refresh()
     {
-        this._countLabel.text = $"Count:{this._clickCount}";
+        this._inGameScreen.Refresh(this._clickCount);
     }
 
     void SaveNfc()
