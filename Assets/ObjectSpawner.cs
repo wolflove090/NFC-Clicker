@@ -5,21 +5,34 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject objectToSpawn; // アタッチするGameObject
     public float fallSpeed = 5f;    // 落下速度
     public LayerMask groundLayer;   // 地面のレイヤーマスク
-    public float minDepth = 5f;     // 最小奥行き
-    public float maxDepth = 15f;    // 最大奥行き
-    public int initialSpawnCount = 10; // 起動時に生成するオブジェクトの数
+    float minDepth = 10f;     // 最小奥行き
+    float maxDepth = 50f;    // 最大奥行き
 
-    void Start()
+    bool _isInit;
+
+    int _counter;
+    public int Counter => this._counter;
+
+    System.Action<int> _onSpawned = null;
+
+    public void Init(int initCount, System.Action<int> onSpawned)
     {
+        this._onSpawned = onSpawned;
+
         // 起動時に指定された数のオブジェクトを事前生成
-        for (int i = 0; i < initialSpawnCount; i++)
+        for (int i = 0; i < initCount; i++)
         {
             SpawnRandomObject();
         }
+
+        this._isInit = true;
     }
 
     void Update()
     {
+        if(this._isInit == false)
+            return;
+
         // 画面クリックの検出
         if (Input.GetMouseButtonDown(0))
         {
@@ -66,6 +79,10 @@ public class ObjectSpawner : MonoBehaviour
         GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, Quaternion.identity);
         // 落下処理を開始するスクリプトをアタッチ
         spawnedObject.AddComponent<ObjectFall>().Initialize(fallSpeed, groundLayer);
+
+        this._counter++;
+
+        this._onSpawned?.Invoke(this._counter);
     }
 }
 

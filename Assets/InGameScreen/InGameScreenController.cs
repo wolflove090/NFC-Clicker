@@ -11,12 +11,12 @@ public class InGameScreenController : MonoBehaviour
 
     Action _onSave = null;
 
-    public void Init(Action onSave, int initCount)
+    public void Init(Action onSave)
     {
         this._onSave = onSave;
 
         // 初期表示用にカウンターを更新
-        this.Refresh(initCount);
+        this.Refresh(0);
     }
 
     public void Refresh(int count)
