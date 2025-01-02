@@ -54,7 +54,6 @@ public class ObjectFall : MonoBehaviour
             // 落下を停止し、移動開始時間を設定
             isFalling = false;
             moveStartTime = Time.time + startMoveDelay;
-            Debug.Log("Object landed. It will start moving after a delay.");
         }
     }
 
@@ -81,6 +80,5 @@ public class ObjectFall : MonoBehaviour
         // ランダムな方向に回転
         float randomAngle = Random.Range(0f, 360f);
         targetRotation = Quaternion.Euler(0f, randomAngle, 0f);
-        Debug.Log("New direction chosen: " + targetRotation.eulerAngles);
     }
 }

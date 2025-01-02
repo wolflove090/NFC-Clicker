@@ -5,6 +5,7 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject objectToSpawn; // アタッチするGameObject
     public float fallSpeed = 5f;    // 落下速度
     public LayerMask groundLayer;   // 地面のレイヤーマスク
+    float fixedYPosition = 10f; // 固定するY座標
     float minDepth = 10f;     // 最小奥行き
     float maxDepth = 50f;    // 最大奥行き
 
@@ -31,7 +32,7 @@ public class ObjectSpawner : MonoBehaviour
 
     void Update()
     {
-        if(this._isInit == false)
+        if (this._isInit == false)
             return;
 
         // 画面クリックの検出
@@ -50,6 +51,9 @@ public class ObjectSpawner : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(screenPosition);
         Vector3 spawnPosition = ray.GetPoint(randomDepth);
 
+        // y座標を固定
+        spawnPosition.y = fixedYPosition;
+
         // オブジェクトを生成
         float randomYRotation = Random.Range(0f, 360f);
         GameObject spawnedObject = Instantiate(objectToSpawn, spawnPosition, Quaternion.Euler(0, randomYRotation, 0));
@@ -65,17 +69,11 @@ public class ObjectSpawner : MonoBehaviour
         RaycastHit hit;
 
         Vector3 spawnPosition;
-        if (Physics.Raycast(ray, out hit))
-        {
-            // ヒットした位置にオブジェクトを生成
-            spawnPosition = hit.point;
-        }
-        else
-        {
-            // ヒットしなかった場合、奥行きをランダムに設定して生成
-            float randomDepth = Random.Range(minDepth, maxDepth);
-            spawnPosition = ray.GetPoint(randomDepth);
-        }
+        float randomDepth = Random.Range(minDepth, maxDepth);
+        spawnPosition = ray.GetPoint(randomDepth);
+
+        // y座標を固定
+        spawnPosition.y = fixedYPosition;
 
         // オブジェクトを生成
         float randomYRotation = Random.Range(0f, 360f);
@@ -88,4 +86,3 @@ public class ObjectSpawner : MonoBehaviour
         this._onSpawned?.Invoke(this._counter);
     }
 }
-

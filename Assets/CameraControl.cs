@@ -5,7 +5,7 @@ public class CameraControl : MonoBehaviour
     public float rotationSpeed = 10f; // 回転速度
 
     private Vector2 lastMousePosition;
-    private Vector2 lastTouchDelta;
+    private Vector2 lastTouchPosition;
 
     void Update()
     {
@@ -36,30 +36,26 @@ public class CameraControl : MonoBehaviour
             }
         }
 
-        // タッチ操作
-        if (Input.touchCount == 2)
+        // タッチ操作（1本指対応）
+        if (Input.touchCount == 1)
         {
-            Touch touch1 = Input.GetTouch(0);
-            Touch touch2 = Input.GetTouch(1);
+            Touch touch = Input.GetTouch(0);
 
-            if (touch1.phase == TouchPhase.Moved && touch2.phase == TouchPhase.Moved)
+            if (touch.phase == TouchPhase.Began)
             {
-                Vector2 currentTouchDelta = touch1.position - touch2.position;
-                if (lastTouchDelta != Vector2.zero)
-                {
-                    Vector2 delta = currentTouchDelta - lastTouchDelta;
-
-                    float yRotation = delta.x * rotationSpeed * Time.deltaTime;
-
-                    // 横回転のみを許可（Y軸周りの回転）
-                    transform.Rotate(0, yRotation, 0, Space.World);
-                }
-
-                lastTouchDelta = currentTouchDelta;
+                lastTouchPosition = touch.position;
             }
-            else if (touch1.phase == TouchPhase.Ended || touch2.phase == TouchPhase.Ended)
+            else if (touch.phase == TouchPhase.Moved)
             {
-                lastTouchDelta = Vector2.zero;
+                Vector2 currentTouchPosition = touch.position;
+                Vector2 delta = currentTouchPosition - lastTouchPosition;
+
+                float yRotation = delta.x * rotationSpeed * Time.deltaTime;
+
+                // 横回転のみを許可（Y軸周りの回転）
+                transform.Rotate(0, yRotation, 0, Space.World);
+
+                lastTouchPosition = currentTouchPosition;
             }
         }
     }
