@@ -2,22 +2,17 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour
 {
-    public float rotationSpeed = 10f; // 回転速度
+    public float rotationSpeed = 5f; // 回転速度（調整済み）
 
     private Vector2 lastMousePosition;
     private Vector2 lastTouchPosition;
+    private bool isHorizontalDrag = true; // ドラッグ方向を判定
 
     void Update()
     {
         // マウス操作
         if (Input.GetMouseButton(1)) // 右クリックが押されている場合
         {
-            if (Input.GetAxis("Mouse ScrollWheel") != 0)
-            {
-                float scrollDelta = Input.GetAxis("Mouse ScrollWheel");
-                transform.Rotate(Vector3.up, scrollDelta * rotationSpeed, Space.World);
-            }
-
             if (Input.GetMouseButtonDown(1))
             {
                 lastMousePosition = Input.mousePosition;
@@ -27,10 +22,26 @@ public class CameraControl : MonoBehaviour
                 Vector2 currentMousePosition = Input.mousePosition;
                 Vector2 delta = currentMousePosition - lastMousePosition;
 
-                float yRotation = delta.x * rotationSpeed * Time.deltaTime;
+                // ドラッグ方向の判定
+                if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y))
+                {
+                    isHorizontalDrag = true;
+                }
+                else
+                {
+                    isHorizontalDrag = false;
+                }
 
-                // 横回転のみを許可（Y軸周りの回転）
-                transform.Rotate(0, yRotation, 0, Space.World);
+                if (isHorizontalDrag)
+                {
+                    float yRotation = delta.x * rotationSpeed * Time.deltaTime;
+                    transform.Rotate(0, yRotation, 0, Space.World);
+                }
+                else
+                {
+                    float xRotation = -delta.y * rotationSpeed * Time.deltaTime;
+                    transform.Rotate(xRotation, 0, 0, Space.Self);
+                }
 
                 lastMousePosition = currentMousePosition;
             }
@@ -44,16 +55,33 @@ public class CameraControl : MonoBehaviour
             if (touch.phase == TouchPhase.Began)
             {
                 lastTouchPosition = touch.position;
+                isHorizontalDrag = true; // 初期化
             }
             else if (touch.phase == TouchPhase.Moved)
             {
                 Vector2 currentTouchPosition = touch.position;
                 Vector2 delta = currentTouchPosition - lastTouchPosition;
 
-                float yRotation = delta.x * rotationSpeed * Time.deltaTime;
+                // ドラッグ方向の判定
+                if (Mathf.Abs(delta.x) > Mathf.Abs(delta.y))
+                {
+                    isHorizontalDrag = true;
+                }
+                else
+                {
+                    isHorizontalDrag = false;
+                }
 
-                // 横回転のみを許可（Y軸周りの回転）
-                transform.Rotate(0, yRotation, 0, Space.World);
+                if (isHorizontalDrag)
+                {
+                    float yRotation = delta.x * rotationSpeed * Time.deltaTime;
+                    transform.Rotate(0, yRotation, 0, Space.World);
+                }
+                else
+                {
+                    float xRotation = -delta.y * rotationSpeed * Time.deltaTime;
+                    transform.Rotate(xRotation, 0, 0, Space.Self);
+                }
 
                 lastTouchPosition = currentTouchPosition;
             }
