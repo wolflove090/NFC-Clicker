@@ -54,6 +54,7 @@ public class ObjectFall : MonoBehaviour
             // 落下を停止し、移動開始時間を設定
             isFalling = false;
             moveStartTime = Time.time + startMoveDelay;
+            SoundManager.PlaySound("Sound/puyon");
         }
     }
 

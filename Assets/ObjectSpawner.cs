@@ -82,7 +82,8 @@ public class ObjectSpawner : MonoBehaviour
         spawnedObject.AddComponent<ObjectFall>().Initialize(fallSpeed, groundLayer);
 
         this._counter++;
-
         this._onSpawned?.Invoke(this._counter);
+
+        SoundManager.PlaySound("Sound/buun");
     }
 }
