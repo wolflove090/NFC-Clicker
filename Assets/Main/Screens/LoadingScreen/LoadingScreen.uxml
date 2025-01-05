@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/LoadingScreen/LoadingScreen.uss?fileID=7433441132597879392&amp;guid=37fc078ef60b74bd8be89a675733a589&amp;type=3#LoadingScreen" />
+    <ui:VisualElement name="loading-screen">
+        <ui:VisualElement name="background">
+            <ui:Label text="Loading..." name="loading-text" />
+            <ui:Button name="cancel-button" text="Cancel" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

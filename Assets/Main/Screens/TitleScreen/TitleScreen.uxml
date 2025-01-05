@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/TitleScreen/TitleScreen.uss?fileID=7433441132597879392&amp;guid=1b10d872e458c4cb09576d0e9162e87d&amp;type=3#TitleScreen" />
+    <ui:VisualElement style="flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%;">
+        <ui:Label class="title-label" text="The See cucumber" style="unityFontStyle: bold; font-size: 32px; margin-bottom: 20px;" />
+        <ui:Button class="deepsea-button" name="StartButton" text="Beginning Game" style="width: 200px; margin-bottom: 10px;" />
+        <ui:Button class="deepsea-button" name="LoadButton" text="Load Game" style="width: 200px;" />
+    </ui:VisualElement>
+</ui:UXML>

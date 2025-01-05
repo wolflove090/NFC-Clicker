@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/InGameScreen/InGame.uss?fileID=7433441132597879392&amp;guid=d528923684f674660b589ecc96a3abbe&amp;type=3#InGame" />
+    <ui:VisualElement class="root">
+        <ui:VisualElement class="top-right-container">
+            <ui:Label name="CounterLabel" text="Count: 0" class="counter-label" />
+        </ui:VisualElement>
+        <ui:VisualElement class="bottom-right-container">
+            <ui:Button name="SaveButton" text="Save Data" class="save-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

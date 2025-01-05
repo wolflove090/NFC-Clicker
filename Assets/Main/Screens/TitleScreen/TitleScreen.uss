@@ -1,0 +1,68 @@
+/* TitleScreen.uss */
+
+/* ルート要素 */
+.root {
+    width: 100%;
+    height: 100%;
+    /* ダークブルー -> もう少し明るいブルー のグラデーション */
+    background: linear-gradient(120deg, #001d2d 0%, #003b56 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* タイトルラベル */
+.title-label {
+    color: #b3ecff;  /* 明るめの水色で深海感をプラス */
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif; /* モダンなフォント例 */
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+
+    /* 若干のテキストシャドウで浮いてる感を出す */
+    text-shadow: 0 0 5px rgba(179, 236, 255, 0.5);
+}
+
+/* ボタン共通スタイル */
+.deepsea-button {
+    width: 220px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+
+    /* 半透明っぽさを出したい場合は、背景に rgba を使う */
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid #b3ecff;  /* タイトルと同系統の色を使って統一感を */
+    border-radius: 6px;
+
+    color: #b3ecff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+
+    /* ボタンに柔らかい影を加え、近代的・洗練された感じを演出 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    /* 変化のアニメーションを用意 */
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+/* ホバー（マウスオーバー）時 */
+.deepsea-button:hover {
+    /* 背景をやや明るくして、水の反射っぽいイメージ */
+    background-color: rgba(179, 236, 255, 0.15);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+/* 押下（クリック時） */
+.deepsea-button:active {
+    scale: 0.95;
+}
+
+/* さらに細かいアレンジ：フォーカス時のアウトラインを消す */
+.deepsea-button:focus {
+    outline: none;
+}
