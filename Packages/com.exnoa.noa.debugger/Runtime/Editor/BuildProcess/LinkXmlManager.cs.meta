@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cb3b401ae03f74e02a9e5631f4b7f4b0
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Editor/BuildProcess/LinkXmlManager.cs
+  uploadId: 712676

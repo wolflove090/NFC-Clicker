@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9947a9a7c148e40eba5c6635a58b8376
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/BasicComponents/Prefabs/TitleBar.prefab
+  uploadId: 712676

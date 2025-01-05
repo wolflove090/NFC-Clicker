@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbeb6ea8d9424b8a9c04df84fe7ad456, type: 3}
+  m_Name: NoaDebuggerSettings
+  m_EditorClassIdentifier: 
+  _startButtonPosition: 5
+  _startButtonScale: 1
+  _startButtonMovementType: 0
+  _saveStartButtonPosition: 1
+  _toolStartButtonAlpha: 0.6
+  _backgroundAlpha: 0.7
+  _floatingWindowAlpha: 0.7
+  _noaDebuggerCanvasSortOrder: 1000
+  _isUIReversePortrait: 0
+  _menuList:
+  - Name: Information
+    Enabled: 1
+    SortNo: 0
+  - Name: Profiler
+    Enabled: 1
+    SortNo: 1
+  - Name: Snapshot
+    Enabled: 1
+    SortNo: 2
+  - Name: ConsoleLog
+    Enabled: 1
+    SortNo: 3
+  - Name: APILog
+    Enabled: 1
+    SortNo: 4
+  - Name: Hierarchy
+    Enabled: 1
+    SortNo: 5
+  - Name: Command
+    Enabled: 1
+    SortNo: 6
+  _autoCreateEventSystem: 1
+  _errorNotificationType: 0
+  _autoInitialize: 1
+  _customMenuList: []
+  _consoleLogCount: 999
+  _apiLogCount: 999
+  _isCustomFontSettingsEnabled: 0
+  _fontAsset: {fileID: 0}
+  _fontMaterial: {fileID: 0}
+  _fontSizeRate: 1
+  _hierarchyLevels: 3
+  _commandFormatLandscape: 0
+  _commandFormatPortrait: 1
+  _autoSave: 1

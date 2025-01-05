@@ -1,0 +1,18 @@
+{
+  "name": "com.exnoa.noa.debugger",
+  "displayName": "NOA Debugger",
+  "version": "1.4.0",
+  "unity": "2021.3",
+  "description": "NOA Debugger is a versatile, high-performing debug tool proven across PC, smartphone, and tablet platforms. It boosts efficiency and evolves through user feedback at EXNOA.",
+  "samples": [
+    {
+      "displayName": "Demo Scene",
+      "description": "Demo scene to demonstrate the NOA Debugger",
+      "path": "Samples~/Demo"
+    }
+  ],
+  "dependencies": {
+    "com.unity.ugui": "1.0.0",
+    "com.unity.textmeshpro": "3.0.6"
+  }
+}

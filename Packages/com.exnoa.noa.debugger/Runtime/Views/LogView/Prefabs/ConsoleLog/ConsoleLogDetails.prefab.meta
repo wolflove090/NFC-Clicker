@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 87d0c06dd9ed24c56bbda1d78bdfa3f6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/LogView/Prefabs/ConsoleLog/ConsoleLogDetails.prefab
+  uploadId: 712676

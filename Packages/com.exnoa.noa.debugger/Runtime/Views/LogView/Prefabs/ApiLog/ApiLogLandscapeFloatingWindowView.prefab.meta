@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cc2b6e82b955142b883a879404f935aa
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/LogView/Prefabs/ApiLog/ApiLogLandscapeFloatingWindowView.prefab
+  uploadId: 712676

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e7f76d5315d567f43a8a06da2e54f8e6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/ToolDetail/Prefabs/ToolDetailView.prefab
+  uploadId: 712676

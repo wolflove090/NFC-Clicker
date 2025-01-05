@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6b6071e26f12c4843b1a4da2eac1606e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/DebugCommand/Prefabs/Components/CommandPanel.prefab
+  uploadId: 712676

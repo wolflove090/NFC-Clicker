@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7737041138f684b239058a474966f65f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/NoaDebugger/Button/NoaDebuggerButton.prefab
+  uploadId: 712676

@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PartsAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 85aee6bc26c454f6780985872b18bd94, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 4d8f617022e8e4280ae565cd00c21ea2, type: 3}
+  - {fileID: 21300000, guid: 8483868076824489a8d3e51f81316927, type: 3}
+  - {fileID: 21300000, guid: 73002390803f74a6e80f8116b3f4a505, type: 3}
+  - {fileID: 21300000, guid: 8f0b789161c704f308f60d709fb217ac, type: 3}
+  - {fileID: 21300000, guid: d6003b9152b28471590fc112a67fd007, type: 3}
+  - {fileID: 21300000, guid: 1dcd95f1bd5ab40d79b4a5b113fa262e, type: 3}
+  - {fileID: 21300000, guid: e0e6eb02797d14c6fb1dc0e1fc2f2ea1, type: 3}
+  - {fileID: 21300000, guid: 2231a522e2906455b98ed80a0a827a97, type: 3}
+  - {fileID: 21300000, guid: 57a9cb22e5bc0a847b2fe13835b859de, type: 3}
+  - {fileID: 21300000, guid: 3fd1b5422d17d4762a4da0f069713665, type: 3}
+  - {fileID: 21300000, guid: 9ee15492891fa4df9a777a427233d382, type: 3}
+  - {fileID: 21300000, guid: 9c91dde356d464555876cbea50ffe4f6, type: 3}
+  - {fileID: 21300000, guid: ce164b0489c7a42468b9f0abf58d3394, type: 3}
+  - {fileID: 21300000, guid: 000b5ce40a2964534943297782da89a8, type: 3}
+  - {fileID: 21300000, guid: d470dcf4947274706be7021ea05d10ee, type: 3}
+  - {fileID: 21300000, guid: a701fe06d628542e4a92288ab37fe55a, type: 3}
+  - {fileID: 21300000, guid: dcd27f26668df45448509f8c29a445b3, type: 3}
+  - {fileID: 21300000, guid: fbcd9d473a75a4f47ae9e06de03a578e, type: 3}
+  - {fileID: 21300000, guid: 94860b67c3b024fb98cc01afba7a7aae, type: 3}
+  - {fileID: 21300000, guid: 8a6ecde7fb2814c7b847829d230978cb, type: 3}
+  - {fileID: 21300000, guid: 42b32cc80c24e43e3b65e3e8745ad7e1, type: 3}
+  - {fileID: 21300000, guid: a0874f59462924c60bd9407423a7e0c0, type: 3}
+  - {fileID: 21300000, guid: 506d53c94e9914ddd9799cecc2908cf1, type: 3}
+  - {fileID: 21300000, guid: 00d2f22ac8c3b4c79bc8c7d767e5156d, type: 3}
+  - {fileID: 21300000, guid: 75cf668a745af4b0393294a222f1ff53, type: 3}
+  - {fileID: 21300000, guid: d051cc0bb20624010b53345bed3b5639, type: 3}
+  - {fileID: 21300000, guid: 549966ab3f10145528eb7419d2df0c3a, type: 3}
+  - {fileID: 21300000, guid: 36d91abb91fa1a44c8f394698fb70f19, type: 3}
+  - {fileID: 21300000, guid: 79458acc5258c254785bb6fa38dc45cb, type: 3}
+  - {fileID: 21300000, guid: 117688bddc5454f049ba7a3665c8fd0f, type: 3}
+  - {fileID: 21300000, guid: 3d15715e6f5d542ba8b7f040d4b990cd, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Icon_graph
+  - Icon_circle
+  - bg_sub
+  - line_status_green
+  - Icon_check
+  - Icon_copy
+  - line_status_blue
+  - line_main
+  - Icon_comparison
+  - Icon_download
+  - btn_main_default
+  - Icon_change
+  - Icon_Key_Open
+  - Icon_close
+  - Icon_down
+  - Icon_plus
+  - Icon_humberger
+  - Icon_open
+  - Icon_Information
+  - logo
+  - Icon_arrow
+  - Icon_floatingWindow
+  - Icon_square
+  - Icon_reset
+  - scroll
+  - Icon_logo
+  - line_status_orange
+  - Icon_Key
+  - Icon_destruction
+  - Icon_search
+  - bg_main
+  m_RenderDataMap: {}
+  m_Tag: PartsAtlas
+  m_IsVariant: 0

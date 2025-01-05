@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: deb715fed3e6349e09bd734b35979fc2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/LogView/Prefabs/ApiLog/ApiLogContextPanel.prefab
+  uploadId: 712676

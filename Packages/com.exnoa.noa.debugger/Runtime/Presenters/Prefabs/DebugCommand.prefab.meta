@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4d032fc941a674ed1aba63b430e8a7d1
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Presenters/Prefabs/DebugCommand.prefab
+  uploadId: 712676

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 965f21401425849b3bb0d352a3867455
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/BasicComponents/Prefabs/Buttons/ToolButtons/ArrowButton.prefab
+  uploadId: 712676

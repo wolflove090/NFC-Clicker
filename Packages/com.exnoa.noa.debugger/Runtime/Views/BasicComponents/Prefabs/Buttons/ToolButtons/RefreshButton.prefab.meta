@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cc50789620169724fa18314e1bcd9d14
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/BasicComponents/Prefabs/Buttons/ToolButtons/RefreshButton.prefab
+  uploadId: 712676

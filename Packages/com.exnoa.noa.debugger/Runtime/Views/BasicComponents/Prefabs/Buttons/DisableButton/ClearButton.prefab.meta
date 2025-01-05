@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a1ed8d35d95264bcfaccad0c4d51db87
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/BasicComponents/Prefabs/Buttons/DisableButton/ClearButton.prefab
+  uploadId: 712676

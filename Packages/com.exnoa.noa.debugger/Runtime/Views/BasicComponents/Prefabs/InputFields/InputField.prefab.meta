@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4e30a42a2190f445281f600fd2f2e4cf
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/BasicComponents/Prefabs/InputFields/InputField.prefab
+  uploadId: 712676

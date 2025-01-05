@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a07d106c66c8c470b9de7dd248eb6dc6
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 272715
+  packageName: NOA Debugger for Unity
+  packageVersion: 1.4.0
+  assetPath: Packages/com.exnoa.noa.debugger/Runtime/Views/LogView/Prefabs/Components/LogToggle.prefab
+  uploadId: 712676
